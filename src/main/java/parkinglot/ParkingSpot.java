@@ -1,22 +1,22 @@
 package parkinglot;
 
 /**
- * Represents a parking space in the parking lot.
- * This class contains information about the parking space, such as its ID, size, and availability.
+ * Represents a parking spot in the parking lot.
+ * This class contains information about the parking spot, such as its ID, size, and availability.
  * @author [Raghav Singh]
  * @version 1.0
  **/
 
-public class ParkingSpace {
+public class ParkingSpot {
 
-    private String spaceId; // Unique identifier for the parking space
+    private String spotId; // Unique identifier for the parking space
 
-    public String getSpaceId() {
-        return spaceId;
+    public String getSpotId() {
+        return spotId;
     }
 
-    public void setSpaceId(String spaceId) {
-        this.spaceId = spaceId;
+    public void setSpotId(String spotId) {
+        this.spotId = spotId;
     }
 
     private ParkingSpaceType size; // Size of the parking space (e.g., COMPACT, REGULAR, LARGE)
@@ -39,8 +39,8 @@ public class ParkingSpace {
 
     private boolean isAvailable; // Indicates if the parking space is currently available
 
-    public ParkingSpace(String spaceId, ParkingSpaceType size) {
-        this.spaceId = spaceId;
+    public ParkingSpot(String spotId, ParkingSpaceType size) {
+        this.spotId = spotId;
         this.size = size;
         this.isAvailable = true; // Initially, the parking space is available
     }

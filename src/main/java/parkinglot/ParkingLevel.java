@@ -3,14 +3,14 @@ package parkinglot;
 import java.util.List;
 
 public class ParkingLevel {
-    private List<ParkingSpace> parkingSpots;
+    private List<ParkingSpot> parkingSpots;
     private int levelNumber;
 
-    public List<ParkingSpace> getParkingSpots() {
+    public List<ParkingSpot> getParkingSpots() {
         return parkingSpots;
     }
 
-    public void setParkingSpots(List<ParkingSpace> parkingSpots) {
+    public void setParkingSpots(List<ParkingSpot> parkingSpots) {
         this.parkingSpots = parkingSpots;
     }
 
@@ -22,7 +22,7 @@ public class ParkingLevel {
         this.levelNumber = levelNumber;
     }
 
-    public ParkingLevel(List<ParkingSpace> parkingSpots, int levelNumber) {
+    public ParkingLevel(List<ParkingSpot> parkingSpots, int levelNumber) {
         this.parkingSpots = parkingSpots;
         this.levelNumber = levelNumber;
     }
