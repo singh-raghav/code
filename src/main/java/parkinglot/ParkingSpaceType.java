@@ -1,6 +1,6 @@
 package parkinglot;
 
-enum ParkingSpaceType {
+public enum ParkingSpaceType {
 
     COMPACT,
     REGULAR,
