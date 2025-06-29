@@ -19,13 +19,13 @@ public class ParkingSpot {
         this.spotId = spotId;
     }
 
-    private ParkingSpaceType size; // Size of the parking space (e.g., COMPACT, REGULAR, LARGE)
+    private ParkingSpotType size; // Size of the parking space (e.g., COMPACT, REGULAR, LARGE)
 
-    public ParkingSpaceType getSize() {
+    public ParkingSpotType getSize() {
         return size;
     }
 
-    public void setSize(ParkingSpaceType size) {
+    public void setSize(ParkingSpotType size) {
         this.size = size;
     }
 
@@ -39,7 +39,7 @@ public class ParkingSpot {
 
     private boolean isAvailable; // Indicates if the parking space is currently available
 
-    public ParkingSpot(String spotId, ParkingSpaceType size) {
+    public ParkingSpot(String spotId, ParkingSpotType size) {
         this.spotId = spotId;
         this.size = size;
         this.isAvailable = true; // Initially, the parking space is available
